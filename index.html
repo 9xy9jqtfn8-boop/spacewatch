@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SpaceWatch | Rocket Launches in UK Time</title>
+  <meta name="description" content="Track upcoming rocket launches, satellite passes and space events, shown simply in UK time." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="space-background">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+    <div class="star-field"></div>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">✦</span>
+      <span>SpaceWatch</span>
+    </a>
+
+    <nav class="header-nav">
+      <a href="#launches">Launches</a>
+      <a href="#features">Features</a>
+      <a href="#alerts">Alerts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="eyebrow">
+          🚀 Global launches • UK time • Simple alerts
+        </div>
+
+        <h1>
+          Never miss the next
+          <span>space launch.</span>
+        </h1>
+
+        <p>
+          SpaceWatch tracks upcoming rocket launches around the world and shows
+          them clearly in UK time, with a clean countdown and simple launch details.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#launches" class="primary-button">View upcoming launches</a>
+          <a href="#features" class="secondary-button">How it works</a>
+        </div>
+
+        <div class="trust-row">
+          <div>
+            <strong>Global</strong>
+            <span>Launch coverage</span>
+          </div>
+          <div>
+            <strong>UK time</strong>
+            <span>No timezone confusion</span>
+          </div>
+          <div>
+            <strong>Alerts</strong>
+            <span>Coming soon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="planet-card">
+          <div class="planet-glow"></div>
+          <div class="planet"></div>
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="mini-card next-launch-card">
+            <span>Next launch</span>
+            <strong>Falcon 9</strong>
+            <small>Tonight • 21:42 UK</small>
+          </div>
+
+          <div class="mini-card countdown-card">
+            <span>Countdown</span>
+            <strong>06h 24m</strong>
+            <small>Schedule may change</small>
+          </div>
+
+          <div class="rocket-trail">
+            <span>🚀</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="launches" class="launch-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Live schedule</span>
+          <h2>Upcoming launches</h2>
+        </div>
+
+        <button id="refreshBtn" class="refresh-button">
+          Refresh
+        </button>
+      </div>
+
+      <p id="lastUpdated" class="last-updated">
+        Demo schedule shown. Live launch data will be connected next.
+      </p>
+
+      <div id="launchList" class="launch-grid">
+        <article class="launch-card featured">
+          <div class="launch-card-top">
+            <div>
+              <span class="launch-provider">SpaceX</span>
+              <h3>Falcon 9 • Starlink Mission</h3>
+            </div>
+            <span class="status-pill green">Likely watchable</span>
+          </div>
+
+          <div class="launch-info-grid">
+            <div>
+              <span>UK time</span>
+              <strong>Tonight, 21:42</strong>
+            </div>
+            <div>
+              <span>Countdown</span>
+              <strong>06h 24m</strong>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>Florida, USA</strong>
+            </div>
+          </div>
+
+          <p>
+            A global rocket launch displayed in simple UK time, with a clean
+            countdown and plain-English launch status.
+          </p>
+
+          <a href="#" class="launch-link">Live link will appear here</a>
+        </article>
+
+        <article class="launch-card">
+          <div class="launch-card-top">
+            <div>
+              <span class="launch-provider">Rocket Lab</span>
+              <h3>Electron • Commercial Payload</h3>
+            </div>
+            <span class="status-pill blue">Scheduled</span>
+          </div>
+
+          <div class="launch-info-grid">
+            <div>
+              <span>UK time</span>
+              <strong>Fri, 04:15</strong>
+            </div>
+            <div>
+              <span>Countdown</span>
+              <strong>2d 11h</strong>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>New Zealand</strong>
+            </div>
+          </div>
+
+          <p>
+            Future versions can include alerts, favourite providers, visible
+            satellite passes, SpaceCam and simple weekly space event summaries.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="feature-section">
+      <div class="section-heading centred">
+        <div>
+          <span class="section-kicker">Built for normal people</span>
+          <h2>Space events made simple</h2>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🕒</span>
+          <h3>Shown in UK time</h3>
+          <p>No converting from UTC, EST or launch-site time. The schedule is shown clearly for UK viewers.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🚀</span>
+          <h3>Global launch tracking</h3>
+          <p>Follow launches from the USA, New Zealand, India, Japan, Europe and other launch sites around the world.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🔔</span>
+          <h3>Alerts later</h3>
+          <p>The first version will show launches. Later, users can request simple reminders before launches worth watching.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="alerts" class="cta-section">
+      <div class="cta-card">
+        <span class="section-kicker">Coming next</span>
+        <h2>Get reminded before lift-off.</h2>
+        <p>
+          Once the live launch schedule is working, Space Watch can add email
+          alerts before selected launches, ISS passes and future space events.
+        </p>
+        <a href="#launches" class="primary-button">Start with launches</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 SpaceWatch. Launch times can change and should be treated as guidance.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
