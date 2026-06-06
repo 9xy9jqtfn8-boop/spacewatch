@@ -370,11 +370,8 @@ function createLaunchCard(launch, index) {
             : `<span class="launch-muted">No live stream link yet</span>`
         }
 
-        ${
-          infoUrl
-            ? `<a href="${escapeHtml(infoUrl)}" class="launch-link secondary-link" target="_blank" rel="noopener">More details ↗</a>`
-            : ""
-        }
+        <span class="launch-muted">Details shown above</span>
+        
       </div>
     </article>
   `;
