@@ -26,6 +26,7 @@
 
     <nav class="header-nav">
       <a href="#launches">Launches</a>
+      <a href="#spacecam">SpaceCam</a>
       <a href="#features">Features</a>
       <a href="#alerts">Alerts</a>
     </nav>
@@ -174,12 +175,43 @@
           </div>
 
           <p>
-            Future versions can include alerts, favourite providers, visible
+            Future versions will include alerts, favourite providers, visible
             satellite passes, SpaceCam and simple weekly space event summaries.
           </p>
         </article>
       </div>
     </section>
+
+    <section id="spacecam" class="spacecam-section">
+  <div class="section-heading">
+    <div>
+      <span class="section-kicker">SpaceCam</span>
+      <h2>Live space views</h2>
+    </div>
+
+    <span class="spacecam-live-pill">External feeds</span>
+  </div>
+
+  <p class="data-note">
+    SpaceCam curates links to official and public space, telescope and observatory feeds. Streams may be offline, delayed, weather affected, replaced with recorded coverage, or unavailable without notice.
+  </p>
+
+  <div class="spacecam-tabs" aria-label="SpaceCam categories">
+    <button class="spacecam-tab active" data-spacecam-filter="all">All</button>
+    <button class="spacecam-tab" data-spacecam-filter="orbit">Orbit</button>
+    <button class="spacecam-tab" data-spacecam-filter="missions">Missions</button>
+    <button class="spacecam-tab" data-spacecam-filter="observatories">Observatories</button>
+    <button class="spacecam-tab" data-spacecam-filter="events">Events</button>
+  </div>
+
+  <div id="spacecamGrid" class="spacecam-grid">
+    <article class="spacecam-card">
+      <span class="spacecam-card-tag">Loading</span>
+      <h3>Preparing SpaceCam</h3>
+      <p>Curated live space views will appear here.</p>
+    </article>
+  </div>
+</section>
 
     <section id="features" class="feature-section">
       <div class="section-heading centred">
@@ -235,6 +267,7 @@
 
     <div class="footer-links">
       <a href="#launches">Upcoming launches</a>
+      <a href="#spacecam">SpaceCam</a>
       <a href="#features">Features</a>
       <a href="https://thespacedevs.com/" target="_blank" rel="noopener">Data source</a>
     </div>
@@ -248,5 +281,6 @@
 </footer>
 
   <script src="app.js"></script>
+  <script src="spacecam.js"></script>
 </body>
 </html>
